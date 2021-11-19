@@ -1,0 +1,122 @@
+body{
+    background-color: #b4959049;
+    /* background-image: url("https://wallpaperaccess.com/full/768855.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+a, a:hover{
+    text-decoration: none;
+}
+ul, li{
+    display: inline-block;
+    list-style: none;
+    justify-content: center;
+}
+.header{
+    border-bottom: 1px solid darkgray;
+}
+.header h1{
+    font-family:'Courier New', Courier, monospace;
+    color: #588b44f6;
+    text-align: center;
+    font-size: 400%;
+}
+.team{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.member{
+    margin: 10px;
+    display:flex;   
+}
+.card{
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    margin: 15px;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    color: #111;
+    background-color: #000;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: center;
+    transition: transform calc(700ms*1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+}
+.team .card:nth-child(1){
+    background-image: url(images/9c1355ff1e1447048c47c9690bb67d3b.jpg);
+    background-size: 510px 550px;
+}
+.team .card:nth-child(3){
+    background-image: url(images/d7a2eebe99f52a0745f96d9fefb0ddc0.jpg);
+    background-size: 510px 550px;
+}
+.card::after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0,0,0,0.4));
+}
+.content h1{
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
+    font-size: 200%;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: -100px;
+    z-index: 1;
+    /* transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1); */
+    transition: all 0.5s;
+}
+.social{
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+}
+.social a{
+    font-size: 25px;
+    color: #000;
+    transition: all 0.5s;
+    padding-inline: 10px;
+}
+.social i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #b69b90;
+    transition: all 0.3s;
+}
+.social li:hover i{
+    color:#000;
+    transform: translateY(-8px);
+}
+
+.card:hover .content{
+    transform: translateY(-60px);
+}
