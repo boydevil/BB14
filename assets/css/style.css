@@ -36,16 +36,16 @@ ul, li{
     overflow: hidden;
     padding: 15px;
     margin: 15px;
-    width: 25%;
-    height: 480px;
+    width: 480px;
+    height: 580px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    color: #111;
-    background-color: #000;
+    color: #fff;
+    background-color: #fff;
 }
-.card::before{
+/* .card::before{
     content: '';
     position: absolute;
     top: 0;
@@ -56,14 +56,16 @@ ul, li{
     background-position: center;
     transition: transform calc(700ms*1.5) cubic-bezier(0.19, 1, 0.22, 1);
     pointer-events: none;
-}
+} */
 .team .card:nth-child(1){
     background-image: url(images/9c1355ff1e1447048c47c9690bb67d3b.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
 }
-.team .card:nth-child(3){
+.team .card:nth-child(2){
     background-image: url(images/d7a2eebe99f52a0745f96d9fefb0ddc0.jpg);
-    background-size: 100% 100%;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
 }
 .card::after{
     content: '';
@@ -74,13 +76,17 @@ ul, li{
     width: 100%;
     height: 100%;
     pointer-events: none;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0,0,0,0.4));
 }
 .content h1{
     font-family:'Courier New', Courier, monospace;
-    color: #fff;
+    color: #111;
     text-align: center;
     font-size: 200%;
+}
+.content h2{
+    font-family:'Courier New', Courier, monospace;
+    color: #111;
+    text-align: center;
 }
 .content{
     position: relative;
@@ -122,15 +128,19 @@ ul, li{
 }
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
+.members{
+    display: flex;
+}
 .card2 {
     background: #fff;
     border-radius: 4px;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-    max-width: 25%;
+    max-width: 28%;
     display: flex;
     flex-direction: row;
     border-radius: 25px;
     position: relative;
+    margin-left: 15%;
 }
 .card2 h2 {
     margin: 0;
