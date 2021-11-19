@@ -27,10 +27,6 @@ ul, li{
     flex-wrap: wrap;
     margin-left: 20px;
 }
-.member{
-    margin: 10px;
-    display:flex;   
-}
 .card{
     position: relative;
     overflow: hidden;
@@ -59,15 +55,15 @@ ul, li{
 } */
 .team .card:nth-child(1){
     background-image: url(images/9c1355ff1e1447048c47c9690bb67d3b.jpg);
-    background-size: 100% 90%;
+    background-size: 100% 92%;
     background-repeat: no-repeat;
 }
 .team .card:nth-child(2){
     background-image: url(images/d7a2eebe99f52a0745f96d9fefb0ddc0.jpg);
-    background-size: 100% 90%;
+    background-size: 100% 92%;
     background-repeat: no-repeat;
 }
-.card::after{
+/* .card::after{
     content: '';
     position: absolute;
     display: block;
@@ -76,17 +72,12 @@ ul, li{
     width: 100%;
     height: 100%;
     pointer-events: none;
-}
+} */
 .content h1{
     font-family:'Courier New', Courier, monospace;
     color: #111;
     text-align: center;
     font-size: 200%;
-}
-.content h2{
-    font-family:'Courier New', Courier, monospace;
-    color: #111;
-    text-align: center;
 }
 .content{
     position: relative;
@@ -94,15 +85,18 @@ ul, li{
     flex-direction: column;
     width: 100%;
     padding: 16px;
-    margin-bottom: -100px;
+    margin-bottom: -120px;
     z-index: 1;
     /* transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1); */
     transition: all 0.5s;
 }
-.social{
+.team .social{
     font-family:'Courier New', Courier, monospace;
     color: #fff;
     display: flex;
+    transition: all 0.5s;
+    align-self: center;
+    /* margin-bottom: -300px; */
 }
 .social a{
     font-size: 25px;
@@ -122,25 +116,30 @@ ul, li{
     color:#000;
     transform: translateY(-8px);
 }
+.card:hover .content .social{
+    transform: translateY(-150px);
+}
 
-.card:hover .content{
-    transform: translateY(-60px);
+.portada:hover .social{
+    transform: translateY(-250px);
 }
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
 .members{
     display: flex;
+    justify-content: center;
 }
 .card2 {
     background: #fff;
     border-radius: 4px;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-    max-width: 28%;
+    max-width: 45%;
+    height: auto;
     display: flex;
     flex-direction: row;
     border-radius: 25px;
     position: relative;
-    margin-left: 15%;
+    margin: 10px
 }
 .card2 h2 {
     margin: 0;
@@ -155,19 +154,9 @@ ul, li{
 }
 .card2 .desc {
     padding: 0.5rem 1rem;
-    font-size: 13px;
+    font-size: 15px;
 }
-.card2 .actions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding: 0.5rem 1rem;
-}
-.card2 svg {
-    width: 85px;
-    height: 85px;
-    margin: 0 auto;
-}
+
 
 .img-avatar {
     width: 80px;
@@ -177,7 +166,7 @@ ul, li{
     border: 6px solid white;
     background-size: cover;
     top: 8%;
-    left: 24%;
+    left: 27%;
 }
 .members .card2:nth-child(1) .img-avatar{
     background-image: url(images/back.jpg);
@@ -196,36 +185,79 @@ ul, li{
     padding: 2.5em 1.5em 1.5em 1.5em;
 }
 
-.img-portada {
-    width: 100%;
-}
-
 .portada {
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-position: bottom center;
-    background-size: cover;
+    border-bottom-right-radius: 20px;
+    background-position: top center;
+    background-size: auto 92%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-end; */
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
 }
-
+.portada h2{
+    font-family:'Courier New', Courier, monospace;
+    color: #111;
+    text-align: center;
+    font-size: 200%;
+    margin-top: 500px;
+}
+.members .social{
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+    transition: all 0.5s;
+    align-self: center;
+    margin-bottom: -300px;
+}
 .members .card2:nth-child(1) .portada{
     background-image: url(images/front.jpg);    
 }
 
 .members .card2:nth-child(2) .portada{
-    background-image: url(images/front2.jpg);    
+    background-image: url(images/front2.jpg);  
+
 }
 
-button {
-    border: none;
-    background: none;
-    font-size: 24px;
-    color: #8bc34a;
-    cursor: pointer;
-    transition:.5s;
+.members ol{
+    display:grid;
 }
-button:hover{
-    color: #4CAF50  ;
-    transform: rotate(22deg)
+
+
+td{
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 50px;
+    padding: 5px;
+
+}
+
+table {
+    width: 100%;
+    background-color: #f1f1c1;
+}
+
+table tr:nth-child(even) {
+    background-color: #b4959049;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table th {
+    color: black;
+    background-color: #fff;
 }
