@@ -36,7 +36,7 @@ ul, li{
     overflow: hidden;
     padding: 15px;
     margin: 15px;
-    width: 480px;
+    width: 25%;
     height: 480px;
     text-align: center;
     display: flex;
@@ -51,7 +51,7 @@ ul, li{
     top: 0;
     left: 0;
     width: 100%;
-    height: 110%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     transition: transform calc(700ms*1.5) cubic-bezier(0.19, 1, 0.22, 1);
@@ -59,11 +59,11 @@ ul, li{
 }
 .team .card:nth-child(1){
     background-image: url(images/9c1355ff1e1447048c47c9690bb67d3b.jpg);
-    background-size: 510px 550px;
+    background-size: 100% 100%;
 }
 .team .card:nth-child(3){
     background-image: url(images/d7a2eebe99f52a0745f96d9fefb0ddc0.jpg);
-    background-size: 510px 550px;
+    background-size: 100% 100%;
 }
 .card::after{
     content: '';
