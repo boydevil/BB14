@@ -120,3 +120,102 @@ ul, li{
 .card:hover .content{
     transform: translateY(-60px);
 }
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+.card2 {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+    max-width: 25%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    position: relative;
+}
+.card2 h2 {
+    margin: 0;
+    padding: 0 1rem;
+}
+.card2 .title {
+    padding: 1rem;
+    text-align: right;
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+}
+.card2 .desc {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+}
+.card2 .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.card2 svg {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.img-avatar {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-size: cover;
+    top: 8%;
+    left: 24%;
+}
+.members .card2:nth-child(1) .img-avatar{
+    background-image: url(images/back.jpg);
+}
+
+.members .card2:nth-child(2) .img-avatar{
+    background-image: url(images/back2.jpg);
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+.img-portada {
+    width: 100%;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.members .card2:nth-child(1) .portada{
+    background-image: url(images/front.jpg);    
+}
+
+.members .card2:nth-child(2) .portada{
+    background-image: url(images/front2.jpg);    
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #8bc34a;
+    cursor: pointer;
+    transition:.5s;
+}
+button:hover{
+    color: #4CAF50  ;
+    transform: rotate(22deg)
+}
