@@ -141,7 +141,6 @@ ul, li{
     flex-direction: row;
     border-radius: 25px;
     position: relative;
-    margin: 10px
 }
 .card2 h2 {
     margin: 0;
