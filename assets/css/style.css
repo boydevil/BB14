@@ -123,13 +123,14 @@ ul, li{
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
+
 .members{
-    /* display: flex; */
-    justify-content: center;
+    justify-items: center;
 }
 .member{
-    display: flex;
-    margin: 50px;
+    margin: 100px;
+    /* display: flex; */
+    /* justify-items: center; */
 }
 .card2 {
     background: #fff;
@@ -151,7 +152,7 @@ ul, li{
     text-align: right;
     color: green;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 20px;
 }
 .card2 .desc {
     padding: 0.5rem 1rem;
@@ -169,11 +170,11 @@ ul, li{
     top: 8%;
     left: 27%;
 }
-.members .card2:nth-child(1) .img-avatar{
+.members .member:nth-child(1) .img-avatar{
     background-image: url(images/back.jpg);
 }
 
-.members .card2:nth-child(2) .img-avatar{
+.members .member:nth-child(2) .img-avatar{
     background-image: url(images/back2.jpg);
 }
 
@@ -199,7 +200,7 @@ ul, li{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     justify-content: center;
     color: #000;
     background-color: #fff;
@@ -219,11 +220,11 @@ ul, li{
     align-self: center;
     margin-bottom: -300px;
 }
-.members .card2:nth-child(1) .portada{
+.members .member:nth-child(1) .portada{
     background-image: url(images/front.jpg);    
 }
 
-.members .card2:nth-child(2) .portada{
+.members .member:nth-child(2) .portada{
     background-image: url(images/front2.jpg);  
 
 }
@@ -246,7 +247,7 @@ table, th, td {
 }
 
 table {
-    width: 100%;
+    width: 60%;
     background-color: #f1f1c1;
 }
 
